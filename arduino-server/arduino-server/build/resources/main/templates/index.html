@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Arduino Button</title>
+</head>
+<body>
+<h1 th:if="${buttonPressed}">Button was pressed!</h1>
+<h1 th:unless="${buttonPressed}">Waiting for button press...</h1>
+</body>
+</html>
